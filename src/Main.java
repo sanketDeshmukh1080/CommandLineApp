@@ -8,7 +8,7 @@ public class Main {
         int age;
         String intrest;
         String city;
-        System.out.println("Hello!!!!");
+        System.out.println("Hello!!!!!");
 
         System.out.print("Enter your name: ");
         name= sc.nextLine();
