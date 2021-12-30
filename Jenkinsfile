@@ -5,7 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                sh "mvn -version"
+                sh "cd src"
+                sh "javac main.java"
+                sh "java main"
 
             }
         }
