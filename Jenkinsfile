@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                maven(command: "clean compile")
+                sh "mvn -version"
 
             }
         }
