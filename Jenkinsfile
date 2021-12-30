@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                sh 'mnv clean compile'
+                sh "mvn clean compile"
 
 
             }
