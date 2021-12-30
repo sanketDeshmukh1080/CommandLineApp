@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                dir
+                sh.dir
+
             }
         }
     }
