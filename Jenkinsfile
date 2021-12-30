@@ -1,13 +1,15 @@
 pipeline {
     agent any
+    tools{
+        maven 'Maven 3.8.3'}
+
 
     stages {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                sh "cd src"
-                sh "javac main.java"
-                sh "java main"
+                sh 'mnv clean install'
+
 
             }
         }
